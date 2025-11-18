@@ -14,7 +14,6 @@ app.use(express.json());
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  url: process.env.DATABASE_URL || undefined
   host: process.env.DB_HOST || "db",
   port: Number(process.env.DB_PORT) || 5432,
   username: process.env.DB_USERNAME || "postgres",
